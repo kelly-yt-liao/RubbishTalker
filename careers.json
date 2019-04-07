@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "career_type": "engineer",
+      "title": "Engineer",
+      "image": "/stylesheets/images/angry-developer.jpg",
+      "rating": 4.7,
+      "icon_type": "far fa-file-code"
+    },
+    {
+      "id": 2,
+      "career_type": "designer",
+      "title": "Designer",
+      "image": "/stylesheets/images/angry-designer.jpg",
+      "rating": 4.1,
+      "icon_type": "fas fa-paint-brush"
+    },
+    {
+      "id": 3,
+      "career_type": "entrepreneur",
+      "title": "Entrepreneur",
+      "image": "/stylesheets/images/angry-founder.jpg",
+      "rating": 3.8,
+      "icon_type": "fas fa-suitcase"
+    }
+  ]
+}

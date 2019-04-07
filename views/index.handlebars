@@ -1,0 +1,50 @@
+<!-- File Path : ./views/index.handlebars , 
+                 this file includes the partial template part for the main.handlebars file. -->
+
+<!-- partial template -->
+<h1 class="mb-1 rubbish-show-title"><i class="far fa-comment-dots"></i> 你想向誰說幹話?! </h1>
+
+<div class="container">
+
+  <!-- set form tag for POST method -->
+  <form method="POST" action="/">
+    <div class="row mt-4" id="data-panel">
+
+      {{#each careers}}
+      <div class="col-sm-4">
+        <div class="card shadow-lg mb-4">
+          <img class="card-img-career" src="{{this.image}}" alt="">
+          <div class="card-box mx-auto">
+            <!-- option engineer -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="option" id="{{this.career_type}}" value="{{this.career_type}}"
+                checked>
+              <label class="form-check-label" for="{{this.career_type}}"> <i class="{{this.icon_type}}"></i>
+                {{this.title}}</label>
+            </div>
+
+            <span class="badge badge-pill badge-danger font-weight-normal"> {{this.rating}}
+              <i class="fas fa-star fa-xs"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+      {{/each}}
+
+    </div>
+
+    <div class="row">
+      <button class="btn btn-info btn-lg" type="submit">Generates The Rubbish!</button>
+
+      <div class="col">
+        <!-- display massages for rubbish talk -->
+        {{#if rubbish}}
+        <code class='Message'>{{rubbish}}</code>
+        {{/if}}
+      </div>
+
+    </div>
+
+  </form>
+</div>

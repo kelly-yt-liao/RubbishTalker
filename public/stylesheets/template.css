@@ -1,0 +1,82 @@
+
+/* Main template */
+head {
+  overflow: hidden;
+  background: rgb(18, 188, 218);
+}
+
+body {
+  background: rgb(245, 213, 246)
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color:  #4592af;
+}
+
+.navbar .navbar-brand:hover {
+  font-size: 30px;
+  color: #226089;
+}
+
+/* Partial template */
+.rubbish-show-title {
+  position: relative;
+  top: -100px;
+  color: rgb(18, 188, 218);
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+  position: relative;
+  z-index: -1;
+  margin: -5px;
+  height: 360px;
+  background: rgb(18, 188, 218) center center url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg');
+  background-size: cover;
+  filter: blur(2px);
+}
+
+
+.card-box {
+  font-size: 25px;
+}
+
+.card {
+  background: #79e1fc;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-career{
+  height: 160px;
+}
+
+@media screen and (max-width: 992px) {
+  .card-img-career{
+    height: 115px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card-img-career{
+    height: auto;
+  } 
+}
+
+.row {
+  padding: 15px;
+}
+
+.col {
+  text-align: center;
+  font-size: 50px;
+  padding: 15px;
+}
+
+.Message {
+  font-size: 30px;
+  background-color: aliceblue;
+  text-align: center;
+}
